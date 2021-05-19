@@ -19,9 +19,7 @@ export default function Home() {
 
       <main>
         <div className="container max-w-screen-md mx-auto mt-16 md:mt-32 mb-12 px-4">
-          <p>
-            It’s time to change change the conversation around dark patterns.
-          </p>
+          <p>It’s time to change the conversation around dark patterns.</p>
           <p>It’s time to call them what they are.</p>
           <h1 className="text-3xl md:text-8xl text-red-600 font-serif my-8 md:my-16 leading-none font-semibold lg:-ml-24">
             Manipulative patterns.
