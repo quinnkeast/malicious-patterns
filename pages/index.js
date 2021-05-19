@@ -6,7 +6,8 @@ export default function Home() {
       <Head>
         <title>Malicious Patterns</title>
         <meta name="description" content="It’s time to change how we talk about dark patterns. It’s time to call them what they are. Manipulative patterns." />
-        <link rel="icon" href="/favicon.ico" />
+        <html lang="en-US" />
+        <script src='https://cdn.usefathom.com/script.js' site={process.env.FATHOM} defer></script>
       </Head>
 
       <main>
