@@ -15,13 +15,14 @@ export default function Home() {
           site={process.env.FATHOM}
           defer
         ></script>
+        <link rel="stylesheet" href="https://use.typekit.net/nfr2ruk.css" />
       </Head>
 
       <main>
         <div className="container max-w-screen-md mx-auto mt-16 md:mt-32 mb-12 px-4">
           <p>It’s time to change the conversation around dark patterns.</p>
           <p>It’s time to call them what they are.</p>
-          <h1 className="text-3xl md:text-8xl text-red-600 font-serif my-8 md:my-16 leading-none font-semibold lg:-ml-24">
+          <h1 className="text-3xl md:text-8xl md:tracking-tight md:pr-4 text-red-600 font-serif my-8 md:my-16 leading-none font-semibold lg:-ml-24">
             Manipulative patterns.
           </h1>
           <p>
@@ -57,7 +58,7 @@ export default function Home() {
             <strong>manipulative patterns</strong>.
           </p>
           <blockquote className="my-12 pl-6 border-l-2 border-gray-100 border-solid">
-            <p className="text-2xl font-serif">
+            <p className="text-2xl">
               <strong>Manipulative patterns</strong> are deceptive practices in
               products, apps, and services designed to influence user behaviour
               or agency for the benefit of the manipulator.
