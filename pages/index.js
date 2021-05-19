@@ -62,7 +62,7 @@ export default function Home() {
             <p className="text-2xl font-serif">
               <strong>Manipulative patterns</strong> are deceptive practices in
               products, apps, and services designed to influence user behaviour
-              or agency to the benefit of the manipulator.
+              or agency for the benefit of the manipulator.
             </p>
           </blockquote>
           <p>—</p>
