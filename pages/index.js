@@ -7,7 +7,7 @@ export default function Home() {
         <title>Manipulative Patterns</title>
         <meta
           name="description"
-          content="It’s time to change how we talk about dark patterns. It’s time to call them what they are. Manipulative patterns."
+          content="It’s time to change the conversation around dark patterns. It’s time to call them what they are. Manipulative patterns."
         />
         <html lang="en-US" />
         <script
@@ -19,7 +19,9 @@ export default function Home() {
 
       <main>
         <div className="container max-w-screen-md mx-auto mt-16 md:mt-32 mb-12 px-4">
-          <p>It’s time to change how we talk about dark patterns.</p>
+          <p>
+            It’s time to change change the conversation around dark patterns.
+          </p>
           <p>It’s time to call them what they are.</p>
           <h1 className="text-3xl md:text-8xl text-red-600 font-serif my-8 md:my-16 leading-none font-semibold lg:-ml-24">
             Manipulative patterns.
@@ -58,9 +60,9 @@ export default function Home() {
           </p>
           <blockquote className="my-12 pl-6 border-l-2 border-gray-100 border-solid">
             <p className="text-2xl font-serif">
-              <strong>Manipulative patterns</strong> in products, apps, and
-              services aim to influence user behaviour, emotions, or agency to
-              the benefit of the manipulator.
+              <strong>Manipulative patterns</strong> are deceptive practices in
+              products, apps, and services designed to influence user behaviour
+              or agency to the benefit of the manipulator.
             </p>
           </blockquote>
           <p>—</p>
