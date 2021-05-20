@@ -1,6 +1,9 @@
-import Head from 'next/head'
+import { useState } from 'react';
+import Head from 'next/head';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 export default function Home() {
+  const [copied, setCopied] = useState(false);
   return (
     <div>
       <Head>
@@ -21,7 +24,10 @@ export default function Home() {
           <p>Language has power.</p>
           <p>Let’s start calling them what they are: <strong>manipulative patterns</strong>.</p>
           <blockquote className="my-12 pl-6 border-l-2 border-gray-100 border-solid">
-            <p className="text-2xl font-serif"><strong>Manipulative patterns</strong> in products, apps, and services aim to influence user behaviour, emotions, or agency to the benefit of the manipulator.</p>
+            <p className="text-2xl font-serif mb-2"><strong>Manipulative patterns</strong> in products, apps, and services aim to influence user behaviour, emotions, or agency to the benefit of the manipulator.</p>
+            {copied ? <small><span className="text-green-300">Copied!</span></small> : <CopyToClipboard text="Manipulative patterns in products, apps, and services aim to influence user behaviour, emotions, or agency to the benefit of the manipulator." onCopy={() => setCopied(true)}>
+            <small className="underline text-gray-400 hover:text-white cursor-pointer">Copy to clipboard</small>
+          </CopyToClipboard>}
           </blockquote>
           <p>—</p>
         </div>
@@ -29,7 +35,7 @@ export default function Home() {
 
       <footer>
         <div className="container max-w-screen-md mx-auto mb-24 px-4">
-          <p className="text-gray-500"><small>Created by <a href="https://quinnkeast.com" target="_blank">Quinn Keast</a> at <a href="https://caribou.co" target="_blank">Caribou</a>.</small></p>
+          <p className="text-gray-500"><small>Created by <a href="https://quinnkeast.com" target="_blank">Quinn Keast</a>.</small></p>
         </div>
       </footer>
     </div>
