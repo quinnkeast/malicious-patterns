@@ -3,23 +3,47 @@
 @tailwind utilities;
 
 @layer base {
+  @font-face {
+    font-family: freight-display-pro, serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: acumin-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: acumin-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
   body {
     @apply bg-gray-900 text-gray-100;
   }
-  
+
+  h1 {
+    font-weight: 700;
+  }
+
   p {
     @apply text-xl mt-4;
   }
-  
+
   p::first-of-type {
     @apply mt-0;
   }
-  
+
   a {
     @apply underline;
   }
-  
+
   a:hover {
     @apply cursor-pointer;
+  }
+
+  strong {
+    font-weight: 600;
   }
 }
