@@ -62,8 +62,8 @@ export default function Home() {
           </p>
           <blockquote className="my-12 pl-6 border-l-2 border-gray-100 border-solid">
             <p className="text-2xl mb-2"><strong>Manipulative patterns</strong> are deceptive practices in products, apps, and services designed to influence user behaviour or agency for the benefit of the manipulator.</p>
-            {copied ? <span className="text-green-300 text-sm">Copied!</span> : <CopyToClipboard text="Manipulative patterns are deceptive practices in products, apps, and services designed to influence user behaviour or agency for the benefit of the manipulator." onCopy={() => setCopied(true)}>
-            <span className="underline text-gray-400 hover:text-white cursor-pointer text-sm">Copy to clipboard</span>
+            {copied ? <span className="success">Copied!</span> : <CopyToClipboard text="Manipulative patterns are deceptive practices in products, apps, and services designed to influence user behaviour or agency for the benefit of the manipulator." onCopy={() => setCopied(true)}>
+            <span className="copy">Copy to clipboard</span>
           </CopyToClipboard>}
           </blockquote>
           <p>—</p>
@@ -72,7 +72,7 @@ export default function Home() {
 
       <footer>
         <div className="container max-w-screen-md mx-auto mb-24 px-4">
-          <p className="text-gray-500"><small>Created by <a href="https://quinnkeast.com" target="_blank">Quinn Keast</a>.</small></p>
+          <p className="text-gray-400"><small>Created by <a href="https://quinnkeast.com" target="_blank">Quinn Keast</a>.</small></p>
         </div>
       </footer>
     </div>
