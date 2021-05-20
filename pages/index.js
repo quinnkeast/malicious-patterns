@@ -10,7 +10,7 @@ export default function Home() {
         <title>Manipulative Patterns</title>
         <meta
           name="description"
-          content="It’s time to change the conversation around dark patterns. It’s time to call them what they are. Manipulative patterns."
+          content="It’s time to change the conversation around dark patterns. It’s time to call them what they are: manipulative patterns."
         />
         <html lang="en-US" />
         <script
