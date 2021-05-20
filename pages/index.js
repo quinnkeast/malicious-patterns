@@ -62,8 +62,8 @@ export default function Home() {
             <strong>manipulative patterns</strong>.
           </p>
           <blockquote className="my-12 pl-6 border-l-2 border-gray-100 border-solid">
-            <p className="text-2xl mb-2"><strong>Manipulative patterns</strong> are deceptive practices in products, apps, and services designed to influence user behaviour or agency for the benefit of the manipulator.</p>
-            {copied ? <span className="success">Copied!</span> : <CopyToClipboard text="Manipulative patterns are deceptive practices in products, apps, and services designed to influence user behaviour or agency for the benefit of the manipulator." onCopy={() => setCopied(true)}>
+            <p className="text-2xl mb-2"><strong>Manipulative patterns</strong> are deceptive practices in products and services designed to influence user behaviour or agency for the benefit of the manipulator.</p>
+            {copied ? <span className="success">Copied!</span> : <CopyToClipboard text="Manipulative patterns are deceptive practices in products and services designed to influence user behaviour or agency for the benefit of the manipulator." onCopy={() => setCopied(true)}>
             <span className="copy">Copy to clipboard</span>
           </CopyToClipboard>}
           </blockquote>
