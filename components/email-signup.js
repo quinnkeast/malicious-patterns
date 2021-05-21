@@ -28,7 +28,7 @@ export default function EmailSignup() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: process.env.BUTTONDOWN,
+        Authorization: process.env.NEXT_PUBLIC_BUTTONDOWN,
       },
       body: JSON.stringify(data),
     };
