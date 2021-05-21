@@ -1,6 +1,7 @@
-import { useState } from 'react';
-import Head from 'next/head';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { useState } from "react";
+import Head from "next/head";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import EmailSignup from "../components/email-signup";
 
 export default function Home() {
   const [copied, setCopied] = useState(false);
@@ -19,7 +20,10 @@ export default function Home() {
           defer
         ></script>
         <link rel="stylesheet" href="https://use.typekit.net/nfr2ruk.css" />
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👹</text></svg>" />
+        <link
+          rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👹</text></svg>"
+        />
       </Head>
 
       <main>
@@ -62,18 +66,45 @@ export default function Home() {
             <strong>manipulative patterns</strong>.
           </p>
           <blockquote className="my-12 pl-6 border-l-2 border-gray-100 border-solid">
-            <p className="text-2xl mb-2"><strong>Manipulative patterns</strong> are deceptive practices in products and services designed to influence user behaviour or agency for the benefit of the manipulator.</p>
-            {copied ? <span className="success">Copied!</span> : <CopyToClipboard text="Manipulative patterns are deceptive practices in products and services designed to influence user behaviour or agency for the benefit of the manipulator." onCopy={() => setCopied(true)} tabIndex="0">
-            <button className="copy">Copy to clipboard</button>
-          </CopyToClipboard>}
+            <p className="text-2xl mb-2">
+              <strong>Manipulative patterns</strong> are deceptive practices in
+              products and services designed to influence user behaviour or
+              agency for the benefit of the manipulator.
+            </p>
+            {copied ? (
+              <span className="success">Copied!</span>
+            ) : (
+              <CopyToClipboard
+                text="Manipulative patterns are deceptive practices in products and services designed to influence user behaviour or agency for the benefit of the manipulator."
+                onCopy={() => setCopied(true)}
+                tabIndex="0"
+              >
+                <button className="copy">Copy to clipboard</button>
+              </CopyToClipboard>
+            )}
           </blockquote>
-          <p>—</p>
+          <p className="mb-12">—</p>
+          <div className="rounded-lg bg-gray-800 p-8">
+            <p className="mt-0 mb-4 font-bold">
+              Get updates when new examples, articles, or resources are
+              available
+            </p>
+            <EmailSignup />
+          </div>
         </div>
       </main>
 
       <footer>
         <div className="container max-w-screen-md mx-auto mb-24 px-4">
-          <p className="text-gray-400"><small>Created by <a href="https://quinnkeast.com" target="_blank">Quinn Keast</a>.</small></p>
+          <p className="text-gray-400">
+            <small>
+              Created by{" "}
+              <a href="https://quinnkeast.com" target="_blank">
+                Quinn Keast
+              </a>
+              .
+            </small>
+          </p>
         </div>
       </footer>
     </div>
