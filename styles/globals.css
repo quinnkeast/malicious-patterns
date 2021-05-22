@@ -23,8 +23,8 @@
     @apply bg-gray-900 text-gray-200;
   }
 
-  h1 {
-    font-weight: 700;
+  h1.title {
+    line-height: 85%;
   }
 
   p {
@@ -46,11 +46,11 @@
   strong {
     font-weight: 600;
   }
-  
+
   blockquote .success {
     @apply text-green-300 text-sm;
   }
-  
+
   blockquote .copy {
     @apply underline text-gray-400 cursor-pointer text-sm hover:text-white;
   }

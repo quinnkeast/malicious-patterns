@@ -55,42 +55,47 @@ export default function EmailSignup() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      {!submitted && (
-        <>
-          <label htmlFor="bd-email" className="block mb-4">
-            Your email address
-          </label>
-          <div className="flex flex-col md:flex-row">
-            <input
-              name="email"
-              id="bd-email"
-              type="email"
-              className="rounded mr-2 text-lg px-2 py-1 text-gray-200 bg-transparent border-solid border-2 border-gray-500 w-full focus:border-blue-600 mb-4 md:mb-0"
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-            <button type="submit" className={buttonClasses}>
-              {submitting ? "Subscribing..." : "Subscribe"}
-            </button>
-          </div>
-          <p className="mt-4 mb-0 text-gray-500 text-sm">
-            We won’t share your email with anyone. You can unsubscribe at any
-            time.
+    <div className="rounded-lg bg-gray-800 p-8 mt-16">
+      <p className="mt-0 mb-4 font-bold">
+        Get updates when new examples, articles, or resources are available
+      </p>
+      <form onSubmit={handleSubmit}>
+        {!submitted && (
+          <>
+            <label htmlFor="bd-email" className="block mb-4">
+              Your email address
+            </label>
+            <div className="flex flex-col md:flex-row">
+              <input
+                name="email"
+                id="bd-email"
+                type="email"
+                className="rounded mr-2 text-lg px-2 py-1 text-gray-200 bg-transparent border-solid border-2 border-gray-500 w-full focus:border-blue-600 mb-4 md:mb-0"
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+              <button type="submit" className={buttonClasses}>
+                {submitting ? "Subscribing..." : "Subscribe"}
+              </button>
+            </div>
+            <p className="mt-4 mb-0 text-gray-500 text-sm">
+              We won’t share your email with anyone. You can unsubscribe at any
+              time.
+            </p>
+          </>
+        )}
+        {error && (
+          <p className="text-red-400 block py-3 px-4 bg-red-300 text-red-900 text-base rounded leading-snug">
+            {error}
           </p>
-        </>
-      )}
-      {error && (
-        <p className="text-red-400 block py-3 px-4 bg-red-300 text-red-900 text-base rounded leading-snug">
-          {error}
-        </p>
-      )}
-      {submitted && (
-        <p className="text-green-400 block py-3 px-4 bg-green-300 text-green-900 text-base rounded leading-snug">
-          🚀 <strong>All set!</strong> Check your inbox to confirm your
-          subscription.
-        </p>
-      )}
-    </form>
+        )}
+        {submitted && (
+          <p className="text-green-400 block py-3 px-4 bg-green-300 text-green-900 text-base rounded leading-snug">
+            🚀 <strong>All set!</strong> Check your inbox to confirm your
+            subscription.
+          </p>
+        )}
+      </form>
+    </div>
   );
 }
