@@ -16,7 +16,7 @@ export default function Home() {
         <html lang="en-US" />
         <script
           src="https://cdn.usefathom.com/script.js"
-          site={process.env.NEXT_PUBLIC_FATHOM}
+          site={process.env.FATHOM}
           defer
         ></script>
         <link rel="stylesheet" href="https://use.typekit.net/nfr2ruk.css" />

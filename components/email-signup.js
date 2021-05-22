@@ -28,12 +28,11 @@ export default function EmailSignup() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: process.env.NEXT_PUBLIC_BUTTONDOWN,
       },
       body: JSON.stringify(data),
     };
 
-    fetch("https://api.buttondown.email/v1/subscribers", requestOptions)
+    fetch("/api/email-signup", requestOptions)
       .then((response) => {
         setSubmitting(false);
         if (response.status !== 201) {
