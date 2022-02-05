@@ -8,7 +8,7 @@ export default function Layout({ preview, children }) {
     <>
       <Meta />
       <div className="container max-w-screen-md mx-auto px-4">
-        <Header />
+        {/*<Header />*/}
         <main>{children}</main>
         <EmailSignup />
         <Footer />
