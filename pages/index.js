@@ -27,10 +27,10 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className="container max-w-screen-md mx-auto mt-16 md:mt-32 mb-12 px-4">
+        <div className="container mx-auto mb-12 mt-16 max-w-screen-md px-4 md:mt-32">
           <p>It’s time to change the conversation around dark patterns.</p>
           <p>It’s time to call them what they are.</p>
-          <h1 className="text-3xl md:text-8xl md:tracking-tight md:pr-4 text-red-600 font-serif my-8 md:my-16 leading-none font-semibold lg:-ml-24">
+          <h1 className="my-8 font-serif text-3xl font-semibold leading-none text-red-600 md:my-16 md:pr-4 md:text-8xl md:tracking-tight lg:-ml-24">
             Manipulative patterns.
           </h1>
           <p>
@@ -65,8 +65,8 @@ export default function Home() {
             Let’s start calling them what they are:{" "}
             <strong>manipulative patterns</strong>.
           </p>
-          <blockquote className="my-12 pl-6 border-l-2 border-gray-100 border-solid">
-            <p className="text-2xl mb-2">
+          <blockquote className="my-12 border-l-2 border-solid border-gray-100 pl-6">
+            <p className="mb-2 text-2xl">
               <strong>Manipulative patterns</strong> are deceptive practices in
               products and services designed to influence user behaviour or
               agency for the benefit of the manipulator.
@@ -83,19 +83,19 @@ export default function Home() {
               </CopyToClipboard>
             )}
           </blockquote>
-          <p className="mb-12">—</p>
+          {/*<p className="mb-12">—</p>
           <div className="rounded-lg bg-gray-800 p-8">
             <p className="mt-0 mb-4 font-bold">
               Get updates when new examples, articles, or resources are
               available
             </p>
             <EmailSignup />
-          </div>
+          </div>*/}
         </div>
       </main>
 
       <footer>
-        <div className="container max-w-screen-md mx-auto mb-24 px-4">
+        <div className="container mx-auto mb-24 max-w-screen-md px-4">
           <p className="text-gray-400">
             <small>
               Created by{" "}
