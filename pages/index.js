@@ -3,8 +3,6 @@ import Head from "next/head";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Script from "next/script";
 
-import EmailSignup from "../components/email-signup";
-
 export default function Home() {
   const [copied, setCopied] = useState(false);
   return (
@@ -85,14 +83,6 @@ export default function Home() {
               </CopyToClipboard>
             )}
           </blockquote>
-          {/*<p className="mb-12">—</p>
-          <div className="rounded-lg bg-gray-800 p-8">
-            <p className="mt-0 mb-4 font-bold">
-              Get updates when new examples, articles, or resources are
-              available
-            </p>
-            <EmailSignup />
-          </div>*/}
         </div>
       </main>
 
