@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Head from "next/head";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import Script from "next/script";
+
 import EmailSignup from "../components/email-signup";
 
 export default function Home() {
@@ -14,11 +16,11 @@ export default function Home() {
           content="It’s time to change the conversation around dark patterns. It’s time to call them what they are: manipulative patterns."
         />
         <html lang="en-US" />
-        <script
+        <Script
           src="https://cdn.usefathom.com/script.js"
           site={process.env.FATHOM}
           defer
-        ></script>
+        ></Script>
         <link rel="stylesheet" href="https://use.typekit.net/nfr2ruk.css" />
         <link
           rel="icon"
